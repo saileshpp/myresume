@@ -1,0 +1,282 @@
+@media (max-width:1000px) {
+    #portfolio, #about, #home, #contact, #footer, #resume, #services{
+        padding: 0px 50px;
+    }
+
+    body{
+        .ham-burger{
+            position: fixed;
+            width: 20px;
+            top: 55px;
+            right: 10px;
+            margin-top: -25px;
+            cursor: pointer;
+            z-index: 999;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: all 250ms;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 7px 4px 4px 5px;
+            div{
+                background-color: black;
+                width: 20px;
+                height: 2px;
+                margin: 5px;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+    header{
+            background-color: white;
+            width: 300px;
+            height: 100vh;
+            z-index: 100;
+            position: fixed;
+            margin-top: -500px;
+            transition: 500ms;
+            left: -350px;
+            top: 500px;
+            border-right: 1px solid lightgray;
+            line-height: 50vh;
+            overflow: hidden;
+            .container{
+                display: inline-flex;
+                margin-top: 150px;
+                flex-direction: column;
+                padding: 0 15px;
+                .cont{
+                    background-color: #F2F3F5;
+                    border-radius: 50px;
+                    width: 270px;
+                    height: 60px;
+                    margin: 5px 0;
+                    line-height: 60px;
+                    cursor: pointer;
+                    transition: 250ms;
+                    white-space: nowrap;
+                    i{
+                        margin-right: 5px;
+                    }
+                    span{
+                        display: contents;
+                        position: fixed;
+                        margin-left: 10px;
+                    }
+                    &:hover{
+                        background-color: $blue;
+                    }
+                    
+                  
+                    &:hover span{
+                        display: contents;
+                    }
+            
+                   
+                }
+                a{
+                    font-size: 15px;
+                    color: $tgray;
+                    text-decoration: none;   
+                    &:hover{
+                        color: white;
+                        span{
+                            
+                        color: white;
+                        }
+                    }
+                }
+            }
+
+    }
+    #home{
+        .container{
+            text-align: center;
+            h1{
+                font-size: 34px;
+            }
+                h2{
+                font-size: 20px;
+                margin-top: 0;
+            }
+        }
+    }
+    #about{
+        .containter{
+            .about{ 
+                
+                .bot{
+                display: flex;
+                flex-direction: column;
+                    .left{
+                        max-width: 550px;
+                    }
+                    .right{
+                        text-align: start;
+                        padding-left: 10px;
+    
+                        h2{
+                            text-transform: inherit;
+                            color: #728394;
+                            font-size: 27px;
+    
+                        }
+    
+                        p{
+                            text-align: start;
+                            &:last-child{
+                                margin-top: 25px;
+                            }
+                        }
+    
+                        .aboutme{
+                            max-width: 500px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            h4{
+                                margin-left: 8px;
+                            }
+    
+                            ul{
+                                list-style: none;
+                                margin-top: 20px;
+    
+                                li{
+                                    display: flex;
+                                    margin-bottom: 25px;
+                                    &:nth-child(4){
+                                        
+                                    margin-bottom: 5px;
+                                    }
+                                    span{
+                                        margin-left: 5px;
+                                        font-family: "Open Sans", sans-serif;
+                                        margin-top: -2px;
+                                    }
+    
+                                    i{
+                                        color: $blue;
+                                        font-size: 12px;
+                                        line-height: 17px;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+            }
+
+            }
+            
+            .skills{
+                .skill{
+                    display: flex;
+                    flex-direction: column;
+                    .left{
+                        ul{
+                            max-width: 850px;
+                        }
+                    }
+                    .right{
+                        ul{
+                            max-width: 850px;
+                        }
+                    }
+                }
+               
+            }
+           
+        }
+    }
+    #resume{
+        .container{
+            .bot{
+                flex-direction: column;
+            }
+        }
+    }
+    #services{
+        .container{
+            .bot{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-top: 50px;
+                grid-gap: 20px;
+            }
+        }
+    }
+    #contact{
+        .container{
+            .bot{
+                flex-direction: column;
+            }
+        }
+    }
+    #portfolio{
+        .container{
+            .bot{
+                max-width: 550px;
+                grid-template-columns: 100%;
+                margin: 50px auto;
+            }
+
+        }
+    }
+}
+@media (max-width:950px){
+    #portfolio, #about, #home, #contact, #footer, #resume, #services{
+        padding: 0px 80px;
+        
+    }
+    #services{
+        .container{
+            .bot{
+                display: grid;
+                grid-template-columns: 1fr;
+                padding-top: 50px;
+                grid-gap: 20px;
+            }
+        }
+    }
+    #contact{
+        .container{
+            .bot{
+                flex-direction: column;
+
+                .right{
+                    .name{
+                        flex-direction: column;
+                        input{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px)and (min-width:951px){ 
+    #portfolio, #about, #home, #contact, #footer, #resume, #services{
+        padding: 0px 50px;
+    }
+    #portfolio{
+        .container{
+            .bot{
+                max-width: 900px;
+                grid-template-columns: 50% 50%;
+                grid-gap: 30px;
+                margin: 50px auto;
+            }
+
+        }
+    }
+}
+@media (max-width:400px) {
+    #portfolio, #about, #home, #contact, #footer, #resume, #services{
+        padding: 0px 20px;
+    }
+}

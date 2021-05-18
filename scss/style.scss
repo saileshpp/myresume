@@ -1,0 +1,76 @@
+@import 'var';
+@import 'home';
+@import 'header';
+@import 'about';
+@import 'resume';
+@import 'portfolio';
+@import 'services';
+@import 'contact';
+@import 'footer';
+@import 'thankyou';
+
+@import 'responsive';
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+.display{
+    left:-19px;
+}
+.dis{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.open{
+    background-color: #0563BB;
+    border-radius: 50% !important;
+    div{
+        background-color: white;
+        border-radius: 50%;
+    &:nth-child(1){    
+        transform: translateY(7px) rotate(-40deg);
+        transition: 300ms;
+        background-color: white;
+        
+    }
+    &:nth-child(2){
+        opacity: 0;
+    }
+    &:nth-child(3){
+        
+        transition: 300ms;
+        transform: translateY(-7px) rotate(40deg);
+        background-color: white;
+    }
+    }
+}
+
+.ham-top{
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1rem;
+    background-color: $blue;
+    z-index: 9999;
+    padding: .7rem .9rem;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+    visibility: hidden;
+    opacity: 0;
+
+    &:hover{
+        background-color: #0678E3;
+    }
+
+}
