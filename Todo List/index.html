@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!--CSS LINK-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/8f/8a/ef/8f8aef9320835de413fded198814141e.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <section>
+        <div class="top">
+            <div class="title">
+                <h1>To-do List</h1>
+            </div>
+            <div class="todo-container">
+                <input type="text" required id="inputText" placeholder="Add items...">
+                <div class="btn" id="btn"><i class="fas fa-plus"></i></div>
+            </div>
+        </div>
+        <div id="todo-display">
+            <ul>
+                <li><div class="left">You have <span id="num"> 0 </span> Left</div> <span id="clear">Clear All</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--JS LINK-->
+    <script src="app.js"></script>
+</body>
+
+</html>
